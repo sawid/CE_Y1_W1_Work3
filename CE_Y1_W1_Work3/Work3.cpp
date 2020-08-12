@@ -6,6 +6,8 @@ void NoP();
 
 void printprompt();
 
+void printanswer();
+
 void YesP() {
     printf("Yes");
 }
@@ -16,6 +18,10 @@ void NoP() {
 
 void printprompt() {
     printf("Enter your number to check : ");
+}
+
+void printanswer() {
+    printf("This number is ");
 }
 
 int main() {
@@ -30,7 +36,7 @@ int main() {
             break;
         }
     }
-
+    printanswer();
     if (n == 1 || n <= 0) {
         NoP();
     }
