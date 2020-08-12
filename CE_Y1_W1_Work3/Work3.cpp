@@ -4,6 +4,8 @@ void YesP();
 
 void NoP();
 
+void printprompt();
+
 void YesP() {
     printf("Yes");
 }
@@ -12,8 +14,13 @@ void NoP() {
     printf("No");
 }
 
+void printprompt() {
+    printf("Enter your number to check : ");
+}
+
 int main() {
     long long int n, i, flag = 0;
+    printprompt();
     scanf_s("%lld", &n);
 
     for (i = 2; i <= n / 2; ++i) {
